@@ -1,0 +1,134 @@
+
+<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;margin-left: 20px;margin-right: 20px;">
+    <legend><span class="red">列车车次显示</span>
+        <i class="layui-icon" style="font-size: 20px" id="trainsAdd">&#xe608;</i>
+    </legend>
+    <div style="margin-left: 20px;margin-right:20px;margin-top: 20px;">
+        <table class="table table-hover" width="100%" id="tbl_trains">
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>车次</th>
+                <th>起始站</th>
+                <th>终到站</th>
+                <th>途径站点</th>
+                <th>硬座车厢数</th>
+                <th>每节硬座车厢座位数</th>
+                <th>硬座票价</th>
+                <th>软座车厢数</th>
+                <th>每节软座车厢座位数</th>
+                <th>软座票价</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody id="tbl_content">
+            <foreach name='trainsList' item='pv'>
+                <tr>
+                    <th id="tid">{$pv.id}</th>
+                    <th>{$pv.train_no}</th>
+                    <th>{$pv.fromStation}</th>
+                    <th>{$pv.toStation}</th>
+                    <th>{$pv.viaStation}</th>
+                    <th>{$pv.hard_carriage_num}</th>
+                    <th>{$pv.hard_seat_num}</th>
+                    <th>{$pv.hard_price}</th>
+                    <th>{$pv.soft_carriage_num}</th>
+                    <th>{$pv.soft_seat_num}</th>
+                    <th>{$pv.soft_price}</th>
+                    <th>
+                        <button class="layui-btn layui-btn-danger trainsDel">删除</button>
+                    </th>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+    </div>
+</fieldset>
+
+
+<!-- 自动建议bootatrap JS -->
+<link rel="stylesheet" href="/Public/Admin/css/autosuggest.min.css">
+<script src="/Public/Admin/js/jquery.autosuggest.min.js"></script>
+<!-- End自动建议bootatrap JS -->
+
+<!-- 加载颜色选择器 -->
+<script type="text/javascript" src="/Public/Admin/js/jquery.minicolors.js"></script>
+<link rel="stylesheet" href="/Public/Admin/css/jquery.minicolors.css">
+<script type="text/javascript" src="/Public/Admin/js/colorset.js"></script>
+<!-- 加载颜色选择器 -->
+
+<script>
+    table = $("#tbl_trains").DataTable({
+        "oLanguage": {
+            "sLengthMenu": "每页显示 _MENU_ 条记录",
+            "sZeroRecords": "抱歉， 没有找到",
+            "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+            "sInfoEmpty": "没有数据",
+            "sSearch": "关键字筛选：",
+            "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+            "oPaginate": {
+                "sFirst": "首页",
+                "sPrevious": "前一页",
+                "sNext": "后一页",
+                "sLast": "尾页"
+            },
+        },
+        "order": [[ 0, "desc" ]],
+        "columnDefs": [
+        ]
+    });
+    $(".dataTables_filter input").attr("placeholder", "请输入关键字进行筛选");
+
+
+    //车次添加
+    $('#trainsAdd').click(function () {
+        $.post('{$Think.config.view_url_base}/Admin/Business/showTrainsAdd',{
+        },function (result) {
+            if(result.status === 200){
+                var openBusiness = layer.open({
+                    title: '列车车次添加',
+                    index:1,
+                    type: 1,
+                    shift: 2,
+                    area: ['35%', '90%'],
+                    shadeClose: false,
+                    maxmin: true,
+                    content: result.data.content
+                })
+            }
+        },'json');
+    });
+
+    //车次删除
+    $('.trainsDel').click(function () {
+        layer.confirm('确定删除此车次？', {
+            btn: ['是的','取消']//按钮
+        },function () {
+            var tid = $('#tid').html();
+            $.post('{$Think.config.view_url_base}/Admin/Business/doTrainsDel', {
+                tid: tid
+            }, function (result) {
+                if (result.status === 200) {
+                    layer.msg(result.info,
+                        {
+                            icon: 1,
+                            time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                        },
+                        function () {
+                            window.location.reload();
+                        });
+                }
+                else {
+                    layer.msg(result.info,
+                        {
+                            icon: 2,
+                            time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                        },
+                        function () {
+                            window.location.reload();
+                        });
+                }
+            }, 'json');
+        });
+    });
+</script>

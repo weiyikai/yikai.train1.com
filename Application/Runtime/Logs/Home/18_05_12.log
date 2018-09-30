@@ -1,0 +1,79 @@
+[ 2018-05-12T12:21:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007672s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\vhost\yikai.train.com\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `train_date01_seat` [ RunTime:0.886312s ]
+SQL: SELECT * FROM `train_date01_seat`  [ RunTime:0.021633s ]
+SQL: SHOW COLUMNS FROM `train_date02_seat` [ RunTime:0.051046s ]
+SQL: SELECT * FROM `train_date02_seat`  [ RunTime:0.001171s ]
+SQL: SHOW COLUMNS FROM `train_date03_seat` [ RunTime:0.109316s ]
+SQL: SELECT * FROM `train_date03_seat`  [ RunTime:0.001137s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 1 [ RunTime:0.325580s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 2 [ RunTime:0.041786s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 3 [ RunTime:0.101912s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 4 [ RunTime:0.063361s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 5 [ RunTime:0.122469s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 6 [ RunTime:0.098869s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 7 [ RunTime:0.122403s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 8 [ RunTime:0.120822s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 9 [ RunTime:0.111299s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 10 [ RunTime:0.132116s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 11 [ RunTime:0.102392s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 12 [ RunTime:0.111608s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 13 [ RunTime:0.062068s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 14 [ RunTime:0.065974s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 15 [ RunTime:0.055657s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 16 [ RunTime:0.076834s ]
+SQL: UPDATE `train_date03_seat` SET `date`='2018-05-16',`is_empty`=1,`sfz`=null WHERE `id` = 17 [ RunTime:0.044739s ]
+SQL: SHOW COLUMNS FROM `train_date04_seat` [ RunTime:0.058128s ]
+SQL: SELECT * FROM `train_date04_seat`  [ RunTime:0.000554s ]
+SQL: UPDATE `train_date04_seat` SET `date`='2018-05-17',`is_empty`=1,`sfz`=null WHERE `id` = 1 [ RunTime:0.051119s ]
+SQL: UPDATE `train_date04_seat` SET `date`='2018-05-17',`is_empty`=1,`sfz`=null WHERE `id` = 2 [ RunTime:0.055567s ]
+SQL: UPDATE `train_date04_seat` SET `date`='2018-05-17',`is_empty`=1,`sfz`=null WHERE `id` = 3 [ RunTime:0.076863s ]
+SQL: UPDATE `train_date04_seat` SET `date`='2018-05-17',`is_empty`=1,`sfz`=null WHERE `id` = 4 [ RunTime:0.056143s ]
+SQL: UPDATE `train_date04_seat` SET `date`='2018-05-17',`is_empty`=1,`sfz`=null WHERE `id` = 5 [ RunTime:0.065288s ]
+SQL: UPDATE `train_date04_seat` SET `date`='2018-05-17',`is_empty`=1,`sfz`=null WHERE `id` = 6 [ RunTime:0.044229s ]
+SQL: UPDATE `train_date04_seat` SET `date`='2018-05-17',`is_empty`=1,`sfz`=null WHERE `id` = 7 [ RunTime:0.043626s ]
+SQL: UPDATE `train_date04_seat` SET `date`='2018-05-17',`is_empty`=1,`sfz`=null WHERE `id` = 8 [ RunTime:0.161331s ]
+SQL: UPDATE `train_date04_seat` SET `date`='2018-05-17',`is_empty`=1,`sfz`=null WHERE `id` = 9 [ RunTime:0.048636s ]
+SQL: SHOW COLUMNS FROM `train_date05_seat` [ RunTime:0.065280s ]
+SQL: SELECT * FROM `train_date05_seat`  [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `train_date06_seat` [ RunTime:0.042575s ]
+SQL: SELECT * FROM `train_date06_seat`  [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `train_date07_seat` [ RunTime:0.013445s ]
+SQL: SELECT * FROM `train_date07_seat`  [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.238466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.238552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017978s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.101629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.101733s ]
+
+[ 2018-05-12T12:21:41+08:00 ] 127.0.0.1 /Public/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002126s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-05-12T12:21:44+08:00 ] 127.0.0.1 /Public/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+ERR: 无法加载控制器:Public
+

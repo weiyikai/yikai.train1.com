@@ -1,0 +1,112 @@
+
+<style>
+    .red{color: red;}
+</style>
+<table class="table table-hover" width="100%" id="tbl_products">
+    <thead>
+    <tr>
+        <th>车次</th>
+        <th>起始站</th>
+        <th>终到站</th>
+        <th>发车时间</th>
+        <th>硬座</th>
+        <th>软座</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody id="tbl_content">
+    <foreach name='trainsList' item='pv'>
+        <tr>
+            <th data-field="train_no" class="train_no">{$pv.train_no}</th>
+            <th data-field="fromStation">{$pv.fromStation}</th>
+            <th data-field="toStation">{$pv.toStation}</th>
+            <th>{$pv.begin_date}</th>
+            <!--<th>{$pv.viaStation}</th>-->
+            <th>剩:<span class="red hard_remain">{$pv.hard_remain}</span>张</th>
+            <th>剩:<span class="red soft_remain">{$pv.soft_remain}</span>张</th>
+            <!--<td data-field="group_name">{$pv.statNum}</td>-->
+            <!--<td data-field="group_img_url" value="{$pv.group_img_url}"><a href="{$pv.group_img_url}" target="_blank"><img src="{$pv.group_img_url}" style="max-width: 30px"></a></td>-->
+            <!--<td><a target="_blank" href="{$Think.config.view_url_base}/Groups/showGroupEdit/id/{$pv.group_id}/merchant_type/2">基本信息</a></td>-->
+            <!--<td><a target="_blank" href="{$Think.config.view_url_base}/CreditSystem/getGroupStations/group_id/{$pv.group_id}">积分规则</a></td>-->
+            <!--<td><a target="_blank" href="{$Think.config.view_url_base}/VipType/index/group_id/{$pv.group_id}">储值卡</a></td>-->
+            <!--<td><a target="_blank" href="{$Think.config.view_url_base}/GroupStations/index/group_id/{$pv.group_id}">积分抵油</a></td>-->
+            <!--<td><a target="_blank" href="{$Think.config.view_url_base}/CreditSystem/getGroupLevle/group_id/{$pv.group_id}">积分定级</a></td>-->
+            <!--<td><a target="_blank" href="{$Think.config.view_url_base}/Settlement/index/merchant_id/{$pv.group_id}/merchant_type/2">结算设置</a></td>-->
+            <th>
+                <button class="layui-btn detail">详情</button>
+                <empty name="pv.total_remain">
+                    <button class="layui-btn layui-btn-disabled">预定</button>
+                <else />
+                    <a href="{$Think.config.view_url_base}/Order/index/train_no/{$pv.train_no}" class="layui-btn layui-btn-normal book">预定</a>
+                </empty>
+
+                <!--<a  href="{$Think.config.view_url_base}/Order/index" id="order" class="btn btn-primary train-order" data-id='{$pv.id}'>预定</a>-->
+            <!--<th><button class="btn btn-danger del-group" data-stid='{$pv.group_id}'>删除</button></th>-->
+            </th>
+        </tr>
+    </foreach>
+    </tbody>
+</table>
+
+
+
+
+<!-- 自动建议bootatrap JS -->
+<link rel="stylesheet" href="/Public/Home/css/autosuggest.min.css">
+<script src="/Public/Home/js/jquery.autosuggest.min.js"></script>
+<!-- End自动建议bootatrap JS -->
+
+<!-- 加载颜色选择器 -->
+<script type="text/javascript" src="/Public/Home/js/jquery.minicolors.js"></script>
+<link rel="stylesheet" href="/Public/Home/css/jquery.minicolors.css">
+<script type="text/javascript" src="/Public/Home/js/colorset.js"></script>
+<!-- 加载颜色选择器 -->
+
+
+<script>
+    table = $("#tbl_products").DataTable({
+        "oLanguage": {
+            "sLengthMenu": "每页显示 _MENU_ 条记录",
+            "sZeroRecords": "抱歉， 没有找到",
+            "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+            "sInfoEmpty": "没有数据",
+            "sSearch": "关键字筛选：",
+            "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+            "oPaginate": {
+                "sFirst": "首页",
+                "sPrevious": "前一页",
+                "sNext": "后一页",
+                "sLast": "尾页"
+            },
+        },
+        "order": [[ 0, "desc" ]],
+        "columnDefs": [
+        ]
+    });
+    $(".dataTables_filter input").attr("placeholder", "请输入关键字进行筛选");
+
+
+    //详情
+    $('.detail').click(function () {
+
+        //预定按钮触发事件
+        var train_no = $(this).parents('tr').children('th.train_no');
+        $.post('{$Think.config.view_url_base}/Index/detailDisplay',
+            {train_no:train_no.html()},
+            function (result) {
+                if(result.status === 200) {
+                    var openBusiness = layer.open({
+                        title: train_no.html() + '详情信息',
+                        type: 1,
+                        shift: 2,
+                        area: ['70%', '30%'],
+                        shadeClose: false,
+                        maxmin: true,
+                        content: result.data.content
+                    })
+                }
+            }
+            ,'json');
+    });
+
+</script>

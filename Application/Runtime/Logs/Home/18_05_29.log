@@ -1,0 +1,529 @@
+[ 2018-05-29T15:24:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018367s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\vhost\yikai.train.com\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `train_date01_seat` [ RunTime:0.459071s ]
+SQL: SELECT * FROM `train_date01_seat`  [ RunTime:0.015129s ]
+SQL: SHOW COLUMNS FROM `train_date02_seat` [ RunTime:0.037219s ]
+SQL: SELECT * FROM `train_date02_seat`  [ RunTime:0.001475s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.221284s ]
+SQL: SHOW COLUMNS FROM `train_trains_info` [ RunTime:0.027482s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.068654s ]
+SQL: SHOW COLUMNS FROM `train_tourist` [ RunTime:0.004324s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000732s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000408s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000463s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000389s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000278s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000269s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000695s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000800s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000484s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000301s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000433s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000539s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000531s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000406s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000357s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000549s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000376s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000372s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000342s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000408s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000286s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000278s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000272s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000376s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000276s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000282s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000276s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000411s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000350s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000359s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000348s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000389s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000248s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000256s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000342s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000236s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000227s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000266s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000365s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000276s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000267s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000342s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000589s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000430s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000493s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000614s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.001039s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000331s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000307s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000474s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000490s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000313s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000393s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000299s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000377s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000264s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000255s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000268s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000403s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000283s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000266s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000300s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000416s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000294s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000321s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000412s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000677s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000421s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000310s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000316s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000414s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000259s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000256s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000292s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.001027s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000453s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000309s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000306s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000338s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000238s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000227s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000229s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000481s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000437s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000456s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000350s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000384s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000220s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000295s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000386s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000276s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000407s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000416s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000265s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000378s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000546s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000334s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000291s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000495s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000263s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000338s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000438s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000533s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000442s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000269s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000342s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000384s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000338s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000521s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000541s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000385s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000335s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000408s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000425s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000225s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000213s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000231s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000208s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000200s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000212s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000301s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000208s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000229s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000288s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000364s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000217s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000262s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000253s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000332s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000217s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000206s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000225s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000352s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000332s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000600s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000425s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000410s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000382s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000648s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000395s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000476s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000286s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000304s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000523s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000277s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000325s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000281s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000562s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000267s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000291s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000600s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000367s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000299s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000288s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000449s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000264s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000249s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000274s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000436s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000284s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000414s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000555s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.030215s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000337s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000226s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000244s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000404s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000760s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000498s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000384s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000380s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000231s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000228s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000323s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000395s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000291s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000325s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000287s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000413s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000432s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000385s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000498s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000502s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000434s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000547s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000634s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000475s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000418s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000351s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000424s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000276s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000267s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000441s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000730s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.001146s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000458s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000381s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000553s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000424s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000398s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000529s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000620s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000320s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000392s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000313s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000462s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000308s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000288s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000297s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000399s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000278s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000281s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000284s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000388s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000236s ]
+SQL: UPDATE `train_date02_seat` SET `date`='2018-06-04',`is_empty`=1,`sfz`=null WHERE `date` = '2018-05-28' [ RunTime:0.000257s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `begin_date` = '2018-05-28'  [ RunTime:0.000335s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 105  [ RunTime:0.000235s ]
+SQL: SELECT * FROM `train_tourist` WHERE `trainId` = 112  [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `train_date03_seat` [ RunTime:0.027632s ]
+SQL: SELECT * FROM `train_date03_seat`  [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `train_date04_seat` [ RunTime:0.008459s ]
+SQL: SELECT * FROM `train_date04_seat`  [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `train_date05_seat` [ RunTime:0.001945s ]
+SQL: SELECT * FROM `train_date05_seat`  [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `train_date06_seat` [ RunTime:0.002716s ]
+SQL: SELECT * FROM `train_date06_seat`  [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `train_date07_seat` [ RunTime:0.002324s ]
+SQL: SELECT * FROM `train_date07_seat`  [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.181953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017466s ]
+
+[ 2018-05-29T15:24:41+08:00 ] 127.0.0.1 /Public/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-05-29T15:24:50+08:00 ] 127.0.0.1 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2018-05-29T15:25:00+08:00 ] 127.0.0.1 /User/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\vhost\yikai.train.com\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `train_user` [ RunTime:0.031589s ]
+SQL: SELECT * FROM `train_user` WHERE `username` = '得毅' LIMIT 1   [ RunTime:0.030803s ]
+SQL: SELECT * FROM `train_user` WHERE `userId` = 4  [ RunTime:0.015132s ]
+
+[ 2018-05-29T15:25:02+08:00 ] 127.0.0.1 /Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\vhost\yikai.train.com\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `train_date01_seat` [ RunTime:0.001801s ]
+SQL: SELECT * FROM `train_date01_seat`  [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `train_date02_seat` [ RunTime:0.001756s ]
+SQL: SELECT * FROM `train_date02_seat`  [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `train_date03_seat` [ RunTime:0.001629s ]
+SQL: SELECT * FROM `train_date03_seat`  [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `train_date04_seat` [ RunTime:0.002289s ]
+SQL: SELECT * FROM `train_date04_seat`  [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `train_date05_seat` [ RunTime:0.002957s ]
+SQL: SELECT * FROM `train_date05_seat`  [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `train_date06_seat` [ RunTime:0.001983s ]
+SQL: SELECT * FROM `train_date06_seat`  [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `train_date07_seat` [ RunTime:0.001995s ]
+SQL: SELECT * FROM `train_date07_seat`  [ RunTime:0.000436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2018-05-29T15:25:02+08:00 ] 127.0.0.1 /Public/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-05-29T15:25:03+08:00 ] 127.0.0.1 /Public/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-05-29T15:25:06+08:00 ] 127.0.0.1 /Business/pay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\vhost\yikai.train.com\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `train_user` [ RunTime:0.002782s ]
+SQL: SELECT * FROM `train_user` WHERE `userId` = 4  [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2018-05-29T15:25:38+08:00 ] 127.0.0.1 /Business/doPay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+
+[ 2018-05-29T15:25:47+08:00 ] 127.0.0.1 /Business/doPay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+
+[ 2018-05-29T15:25:54+08:00 ] 127.0.0.1 /Business/doPay
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+
+[ 2018-05-29T15:27:37+08:00 ] 127.0.0.1 /Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\vhost\yikai.train.com\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `train_date01_seat` [ RunTime:0.002154s ]
+SQL: SELECT * FROM `train_date01_seat`  [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `train_date02_seat` [ RunTime:0.001920s ]
+SQL: SELECT * FROM `train_date02_seat`  [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `train_date03_seat` [ RunTime:0.001883s ]
+SQL: SELECT * FROM `train_date03_seat`  [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `train_date04_seat` [ RunTime:0.002715s ]
+SQL: SELECT * FROM `train_date04_seat`  [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `train_date05_seat` [ RunTime:0.002685s ]
+SQL: SELECT * FROM `train_date05_seat`  [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `train_date06_seat` [ RunTime:0.001687s ]
+SQL: SELECT * FROM `train_date06_seat`  [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `train_date07_seat` [ RunTime:0.002504s ]
+SQL: SELECT * FROM `train_date07_seat`  [ RunTime:0.000453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2018-05-29T15:27:37+08:00 ] 127.0.0.1 /Public/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-05-29T15:27:37+08:00 ] 127.0.0.1 /Public/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-05-29T15:27:46+08:00 ] 127.0.0.1 /Index/doSerach
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+NOTIC: [8] Undefined index: hard_total_num D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Home\Controller\IndexController.class.php 第 386 行.
+NOTIC: [8] Undefined index: soft_total_num D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Home\Controller\IndexController.class.php 第 387 行.
+
+[ 2018-05-29T15:27:46+08:00 ] 127.0.0.1 /Index/serachList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\XAMPP\htdocs\vhost\yikai.train.com\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `train_trains_info` [ RunTime:0.002133s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `fromStation` = '汉中' AND `toStation` = '延安' AND `begin_date` = '2018-05-29'  [ RunTime:0.040087s ]
+SQL: SHOW COLUMNS FROM `train_date01_seat` [ RunTime:0.002069s ]
+SQL: SHOW COLUMNS FROM `train_date02_seat` [ RunTime:0.003057s ]
+SQL: SHOW COLUMNS FROM `train_date03_seat` [ RunTime:0.002198s ]
+SQL: SHOW COLUMNS FROM `train_date04_seat` [ RunTime:0.002453s ]
+SQL: SHOW COLUMNS FROM `train_date05_seat` [ RunTime:0.002383s ]
+SQL: SHOW COLUMNS FROM `train_date06_seat` [ RunTime:0.002093s ]
+SQL: SHOW COLUMNS FROM `train_date07_seat` [ RunTime:0.001966s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `fromStation` = '汉中' AND `toStation` = '延安' AND `begin_date` = '2018-05-29'  [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `train_seat_total` [ RunTime:0.000720s ]
+SQL: SELECT * FROM `train_date01_seat`  [ RunTime:0.000674s ]
+SQL: SELECT * FROM `train_date02_seat`  [ RunTime:0.000631s ]
+SQL: SELECT * FROM `train_date03_seat`  [ RunTime:0.000432s ]
+SQL: SELECT * FROM `train_seat_total` WHERE `train_no` = 'K118' LIMIT 1   [ RunTime:0.012809s ]
+SQL: SELECT * FROM `train_date03_seat` WHERE `trainId` = 106 AND `date` = '2018-05-29' AND `is_empty` = 0 AND `type` = 1  [ RunTime:0.064565s ]
+SQL: UPDATE `train_trains_info` SET `hard_total_num`=4,`hard_remain`=4 WHERE `id` = 106 [ RunTime:0.049424s ]
+SQL: SELECT * FROM `train_date03_seat` WHERE `trainId` = 106 AND `date` = '2018-05-29' AND `is_empty` = 0 AND `type` = 0  [ RunTime:0.000714s ]
+SQL: UPDATE `train_trains_info` SET `soft_total_num`=4,`soft_remain`=4 WHERE `id` = 106 [ RunTime:0.042385s ]
+SQL: SELECT * FROM `train_date04_seat`  [ RunTime:0.000660s ]
+SQL: SELECT * FROM `train_date05_seat`  [ RunTime:0.000755s ]
+SQL: SELECT * FROM `train_date06_seat`  [ RunTime:0.000731s ]
+SQL: SELECT * FROM `train_date07_seat`  [ RunTime:0.000947s ]
+SQL: SELECT * FROM `train_trains_info` WHERE `fromStation` = '汉中' AND `toStation` = '延安' AND `begin_date` = '2018-05-29'  [ RunTime:0.000888s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Undefined index: statNum D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 149 行.
+NOTIC: [8] Undefined index: group_img_url D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 150 行.
+NOTIC: [8] Undefined index: group_img_url D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 150 行.
+NOTIC: [8] Undefined index: group_img_url D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 150 行.
+NOTIC: [8] Undefined index: group_id D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 151 行.
+NOTIC: [8] Undefined index: group_id D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 152 行.
+NOTIC: [8] Undefined index: group_id D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 153 行.
+NOTIC: [8] Undefined index: group_id D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 154 行.
+NOTIC: [8] Undefined index: group_id D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 155 行.
+NOTIC: [8] Undefined index: group_id D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 156 行.
+NOTIC: [8] Undefined index: group_id D:\XAMPP\htdocs\vhost\yikai.train.com\Application\Runtime\Cache\Home\76886dce184635ceb24221b871d77588.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000974s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+

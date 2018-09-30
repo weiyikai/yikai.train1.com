@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .red{color: #393D49;}
+</style>
+
+<script type="text/javascript" src="/Public/Home/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/Public/Home/js/jquery.minicolors.js"></script>
+<script src="/Public/Home/js/layer/layer.js"></script>
+<script type="text/javascript" src="/Public/Home/js/colorset.js"></script>
+<link rel="stylesheet" href="/Public/Home/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="/Public/Home/css/jquery.minicolors.css">
+<body>
+<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;margin-left: 20px;margin-right: 20px;">
+    <legend><span class="red">退票</span>
+        <i class="layui-icon" style="font-size: 20px">&#xe62a;</i>
+    </legend>
+    <div class="shadow" style="display: none;"></div>
+    <!--<include file="nav" />-->
+    <div id="changePage1">
+        <div id="wrapper1">
+            <div class="table-responsive">
+                <style>
+                    table.table-hover>tbody>tr:hover {
+                        background-image: linear-gradient(to bottom, rgb(245, 245, 245) 0, rgb(206, 221, 213) 100%);
+                    }table.table-hover tr:nth-child(even) {
+                         background-color: #E1E1E1;
+                     }
+                </style>
+                <include file="tableListQuit" />
+            </div>
+        </div>
+    </div>
+</fieldset>
+</body>
+</html>
+<script>
+    window.reload();
+</script>

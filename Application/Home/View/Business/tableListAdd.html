@@ -1,0 +1,122 @@
+<div style="margin-left: 20px;margin-right:20px;margin-top: 20px;">
+    <table class="table table-hover" width="100%" id="tbl_add">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>真实姓名</th>
+            <th>身份证</th>
+            <th>联系方式</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="tbl_content">
+        <foreach name='touristList' item='pv'>
+            <tr>
+                <th id="id">{$pv.id}</th>
+                <th>{$pv.realname}</th>
+                <th>{$pv.sfz}</th>
+                <th>{$pv.tel}</th>
+                <th>
+                    <button class="layui-btn layui-btn-danger touristDel">删除</button>
+                </th>
+            </tr>
+        </foreach>
+        </tbody>
+    </table>
+</div>
+    <a href='{$Think.config.view_url_base}/Index/index' class="layui-btn" style="margin-left: 600px;margin-bottom: 10px;">去买票</a>
+
+<!-- 自动建议bootatrap JS -->
+<link rel="stylesheet" href="/Public/Home/css/autosuggest.min.css">
+<script src="/Public/Home/js/jquery.autosuggest.min.js"></script>
+<!-- End自动建议bootatrap JS -->
+
+<!-- 加载颜色选择器 -->
+<script type="text/javascript" src="/Public/Home/js/jquery.minicolors.js"></script>
+<link rel="stylesheet" href="/Public/Home/css/jquery.minicolors.css">
+<script type="text/javascript" src="/Public/Home/js/colorset.js"></script>
+<!-- 加载颜色选择器 -->
+
+
+<script>
+    table = $("#tbl_add").DataTable({
+        "oLanguage": {
+            "sLengthMenu": "每页显示 _MENU_ 条记录",
+            "sZeroRecords": "抱歉， 没有找到",
+            "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+            "sInfoEmpty": "没有数据",
+            "sSearch": "关键字筛选：",
+            "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+            "oPaginate": {
+                "sFirst": "首页",
+                "sPrevious": "前一页",
+                "sNext": "后一页",
+                "sLast": "尾页"
+            },
+        },
+        "order": [[ 0, "desc" ]],
+        "columnDefs": [
+        ]
+    });
+    $(".dataTables_filter input").attr("placeholder", "请输入关键字进行筛选");
+
+    //乘客添加
+    $('.touristAdd').click(function () {
+        $.post('{$Think.config.view_url_base}/Business/showTouristAdd',
+            {},
+            function (result) {
+                if(result.status === 200) {
+                    var openBusiness = layer.open({
+                        title: result.data.myself + '的乘客信息表',
+                        index:1,
+                        type: 1,
+                        shift: 2,
+                        area: ['30%', '47%'],
+                        shadeClose: false,
+                        maxmin: true,
+                        content: result.data.content
+                    })
+                }
+            }
+            ,'json');
+
+    });
+
+    //乘客的删除
+    $('.touristDel').click(function () {
+        var tourist_id = $('#id').html();
+        layer.confirm('确定删除此乘客？', {
+                btn: ['是的','取消']//按钮
+            },
+            function () {
+                $.post('{$Think.config.view_url_base}/Business/doTouristDel',
+                    {
+                        tourist_id:tourist_id
+                    },
+                    function (result) {
+                        if(result.status === 200){
+                            layer.msg(result.info,
+                                {
+                                    icon: 1,
+                                    time: 3000 //2秒关闭（如果不配置，默认是3秒）
+                                },
+                                function () {
+                                    window.location.reload();
+                                });
+                        }
+                        else
+                        {
+                            layer.msg(result.info,
+                                {
+                                    icon: 2,
+                                    time: 3000 //2秒关闭（如果不配置，默认是3秒）
+                                },
+                                function () {
+                                    window.location.reload();
+                                });
+                        }
+                    }
+                    ,'json')}
+        );
+    });
+</script>

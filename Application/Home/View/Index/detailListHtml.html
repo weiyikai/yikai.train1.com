@@ -1,0 +1,41 @@
+<style>
+    .detail{text-align: center}
+</style>
+<table class="layui-table" lay-even="" lay-skin="row">
+    <!--<colgroup>-->
+        <!--<col width="150">-->
+        <!--<col width="200">-->
+        <!--<col width="200">-->
+        <!--<col width="150">-->
+    <!--</colgroup>-->
+    <thead>
+    <tr>
+        <th>车次</th>
+        <th>起始站</th>
+        <th>终到站</th>
+        <th>发车时间</th>
+        <th>硬座总数</th>
+        <th>硬座剩余</th>
+        <th>硬座票价</th>
+        <th>软座总数</th>
+        <th>软座剩余</th>
+        <th>软座票价</th>
+    </tr>
+    </thead>
+    <tbody>
+    <foreach name='detailList' item='pv'>
+        <tr>
+            <td class="detail">{$pv.train_no}</td>
+            <td class="detail">{$pv.fromStation}</td>
+            <td class="detail">{$pv.toStation}</td>
+            <td class="detail">{$pv.begin_date}</td>
+            <td class="detail">{$pv.hard_total_num}</td>
+            <td class="detail"><span class="red">{$pv.hard_remain}</span></td>
+            <td class="detail"><span class="red">{$pv.hard_price}元</span></td>
+            <td class="detail">{$pv.soft_total_num}</td>
+            <td class="detail"><span class="red">{$pv.soft_remain}</span></td>
+            <td class="detail"><span class="red">{$pv.soft_price}元</span></td>
+        </tr>
+    </foreach>
+    </tbody>
+</table>

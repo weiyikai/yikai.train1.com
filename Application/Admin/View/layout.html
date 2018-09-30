@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/Public/Admin/img/train.jpg">
+    <link rel="Bookmark" href="/Public/Admin/img/train.jpg">
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap3.3.5.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Admin/js/fakeLoader.min.js"></script>
+    <script src="__PUBLIC__/Admin/js/layer/layer.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/Admin/js/layui/css/layui.css">
+    <link type="text/css" href="__PUBLIC__/Admin/css/common.css" rel="stylesheet">
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+    <!-- js i18n -->
+    <!-- jquery validation i18n -->
+    <!-- head and footer -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>后台</title>
+</head>
+<body>
+<include file="Public:header" />
+{__CONTENT__}
+<include file="Public:footer" />
+</body>
+</html>
+<script>
+    window.onunload=function(e){
+        var e = window.event||e;
+        e.returnValue=("确定离开当前页面吗？");
+    }
+</script>

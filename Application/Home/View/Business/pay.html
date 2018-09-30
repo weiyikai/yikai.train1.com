@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+    .red{color: #FF5722}
+    input.myinput{border: solid 1px #E0E0E0;width: 220px;height: 35px;padding: 3px 10px 3px 10px;}
+</style>
+
+
+<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;margin-left: 20px;margin-right: 20px;">
+    <legend>充值须知
+        <i class="layui-icon" style="font-size: 20px">&#xe60b;</i>
+    </legend>
+    <div style="width: 70%;margin-left: 160px;margin-top: 20px;">
+        <blockquote class="layui-elem-quote">1.充值成功后，<span class="red">5-10</span>分钟之内到账。</blockquote>
+        <blockquote class="layui-elem-quote">2.<span class="red">实名制</span>用户可以预先充值<span class="red">任意数量</span>的火车币，系统检测到后会在您所绑定的银行卡内自动扣除等金额的RMB。</blockquote>
+        <blockquote class="layui-elem-quote">3.本站所有<span class="red">注册用户</span>均为实名制用户。</blockquote>
+    </div>
+</fieldset>
+
+<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;margin-left: 20px;margin-right: 20px;">
+    <legend>充值
+        <i class="layui-icon" style="font-size: 20px">&#xe63c;</i>
+    </legend>
+    <div style="width: 70%;margin-left: 160px;">
+        <table class="layui-table" lay-skin="line">
+            <thead>
+            <tr>
+                <th>用户</th>
+                <th>真实姓名</th>
+                <th>待充值金额</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name='user_payList' item='pv'>
+                <tr>
+                    <th>{$pv.username}</th>
+                    <th class="realname">{$pv.realname}</th>
+                    <th>
+                        <input id="payMoney" type="text" class="myinput" placeholder="请输入待充金额">元
+                    </th>
+                    <th>
+                        <button class="layui-btn payMoney">充值</button>
+                        <a href="{$Think.config.view_url_base}/Business/remainMoney" class="layui-btn layui-btn-normal ">余额查询</a>
+                    </th>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+    </div>
+</fieldset>
+</body>
+</html>
+
+<script>
+    $('.payMoney').click(function () {
+        var realname = $(this).parents('tr').children('th.realname').html();
+        var paymoeny = $('#payMoney');
+        layer.confirm('确定为'+realname+'充值'+paymoeny.val()+'个火车币吗？',{
+            btn: ['是的','取消'] //按钮
+        },
+        function () {
+            if(paymoeny.val() === ""){
+                layer.msg('充值金额不能为空',{
+                    time:2000//3秒后自动关闭
+                });
+                paymoeny.focus();
+            }
+            if(isNaN(paymoeny.val())){
+                layer.msg('请输入正确的金额数',{
+                    time:2000//3秒后自动关闭
+                });
+                paymoeny.val("");
+                paymoeny.focus();
+            }
+            $.post('{$Think.config.view_url_base}/Business/doPay',{
+                pay_money:parseInt(paymoeny.val())
+            },function (result) {
+                if(result.status === 200){
+                    window.location.href = '{$Think.config.view_url_base}/Business/remainMoney';
+                }
+                else{
+                    layer.msg(result.info,
+                        {
+                            icon: 2,
+                            time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                        })
+                }
+            });
+        });
+    });
+</script>

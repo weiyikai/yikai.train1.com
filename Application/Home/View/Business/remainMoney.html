@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;margin-left: 20px;margin-right: 20px;">
+    <legend>余额查询
+        <i class="layui-icon" style="font-size: 20px">&#xe60b;</i>
+    </legend>
+    <div style="width: 70%;margin-left: 160px;">
+        <table class="layui-table" lay-skin="line">
+            <thead>
+            <tr>
+                <th>用户</th>
+                <th>真实姓名</th>
+                <th>钱包金额</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <foreach name='user_moneyList' item='pv'>
+                <tr>
+                    <th>{$pv.username}</th>
+                    <th>{$pv.realname}</th>
+                    <th>{$pv.money}</th>
+                    <th>
+                        <a href="{$Think.config.view_url_base}/Business/pay" class="layui-btn layui-btn-warm">去充值</a>
+                    </th>
+                </tr>
+            </foreach>
+            </tbody>
+        </table>
+    </div>
+</fieldset>
+</body>
+</html>
